@@ -1,0 +1,263 @@
+/* 视频样式 */
+.roleSlideBg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0.26rem;
+    left: 0;
+    object-fit: cover; /* 保持宽高比同时填充整个区域 */
+}
+.roleSlideBg2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0.26rem;
+    left: 0;
+    object-fit: cover; /* 保持宽高比同时填充整个区域 */
+}
+.roleSlideBg3 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0.26rem;
+    left: 0;
+    object-fit: cover; /* 保持宽高比同时填充整个区域 */
+}
+/* 角色页面预设 */
+.role_1{
+    display: block;
+    transition: all 0.8s;
+    opacity: 1;
+}
+.role_2{display: none;
+    transition: all 0.8s;
+    opacity: 0;
+}
+.role_3{display: none;
+    transition: all 0.8s;
+    opacity: 0;
+}
+/* 左侧预约栏 */
+.aside_yy{
+    display: block;
+    position: absolute;
+    width: 2.5rem;
+    height: 10rem;
+    top: 0.48rem;
+    right: 90%;
+    transform: translateX(-40%);
+    background: url(../assets/aside_yy.png) no-repeat;
+    background-size: 100%;
+    z-index: 4;
+    animation: aside 4s ease 0s forwards;
+    animation-iteration-count: 1;
+}
+@keyframes aside{
+    0%{
+        transform: translateX(0%);
+    }
+    25%{ 
+        transform: translateX(-40%);
+    }
+    50%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+.show{
+    display: block;
+    position: absolute;
+    width: 0.5rem;
+    height: 1.2rem;
+    top: 0.65rem;
+    right: 0.31rem;
+    background: url(../assets/aside_yyBtn.png);
+    background-size: 200% auto;
+    z-index: 4;
+    cursor: pointer;
+}
+.show:hover{
+    display: block;
+    position: absolute;
+    width: 0.5rem;
+    height: 1.2rem;
+    top: 0.65rem;
+    right: 0.31rem;
+    background: url(../assets/aside_yyBtn.png);
+    background-size: 200% auto;
+    background-position-x: right;
+    cursor: pointer;
+    z-index: 4;
+}
+.role_character{
+    display: block;
+    position: absolute;
+    width: 2.3rem;
+    height: 0.64rem;
+    top: 1.25rem;
+    left: 1.2rem;
+    background: url(../assets/role_character.png);
+    background-size: 100%;
+    z-index: 4;
+}
+.role_character_sign1{
+    display: block;
+    position: absolute;
+    width: 0.4rem;
+    height: 0.31rem;
+    top: 1.25rem;
+    left: 2.8rem;
+    background: url(../assets/role_character_sign1.png);
+    background-size: 100%;
+    z-index: 4;
+}
+.role1_name{
+    display: block;
+    position: absolute;
+    width: 1.5rem;
+    height: 0.96rem;
+    top:2.15rem;
+    left: 1.2rem;
+    background: url(../assets/role1_name.png);
+    background-size: 100%;
+    background-position: center;
+    z-index: 3;
+}
+.role1_lines{
+    display: block;
+    position: absolute;
+    width: 2rem;
+    height: 0.44rem;
+    top: 3.2rem;
+    left: 1.2rem;
+    background: url(../assets/role1_lines.png);
+    background-size: 100%;
+    z-index: 3;
+}
+.role2_name{
+    display: block;
+    position: absolute;
+    width: 2.3rem;
+    height: 0.96rem;
+    top:2.15rem;
+    left: 1.2rem;
+    background: url(../assets/role2_name.png);
+    background-size: 100%;
+    background-position: center;
+    z-index: 4;
+}
+.role2_lines{
+    display: block;
+    position: absolute;
+    width: 3.1rem;
+    height: 0.44rem;
+    top: 3.2rem;
+    left: 1.2rem;
+    background: url(../assets/role2_lines.png);
+    background-size: 100%;
+    z-index: 3;
+}
+.role3_name{
+    display: block;
+    position: absolute;
+    width: 1.55rem;
+    height: 0.96rem;
+    top:2.15rem;
+    left: 1.2rem;
+    background: url(../assets/role3_name.png);
+    background-size: 100%;
+    background-position: center;
+    z-index: 4;
+}
+.role3_lines{
+    display: block;
+    position: absolute;
+    width: 2.8rem;
+    height: 0.44rem;
+    top: 3.2rem;
+    left: 1.2rem;
+    background: url(../assets/role3_lines.png);
+    background-size: 100%;
+    z-index: 3;
+}
+/* 底部切换 */
+.role_bullet1{
+    display: block;
+    position: absolute;
+    width: 1rem;
+    height: 0.43rem;
+    bottom: 0.2rem;
+    left: 1rem;
+    background: url(../assets/role_bullet1.png);
+    background-size: 100%;
+    background-position: bottom;
+    cursor: pointer;
+    z-index: 4;
+}
+.role_bullet1:hover{
+    display: block;
+    position: absolute;
+    width: 1rem;
+    height: 0.43rem;
+    bottom: 0.2rem;
+    left: 1rem;
+    background: url(../assets/role_bullet1.png);
+    background-size: 100%;
+    background-position: bottom;
+    cursor: pointer;
+    z-index: 4;
+}
+.role_bullet2{
+    display: block;
+    position: absolute;
+    width: 1rem;
+    height: 0.43rem;
+    bottom: 0.2rem;
+    left: 2rem;
+    background: url(../assets/role_bullet2.png);
+    background-size: 100%;
+    background-position: top;
+    cursor: pointer;
+    z-index: 4;
+}
+.role_bullet2:hover{
+    display: block;
+    position: absolute;
+    width: 1rem;
+    height: 0.43rem;
+    bottom: 0.2rem;
+    left: 2rem;
+    background: url(../assets/role_bullet2.png);
+    background-size: 100%;
+    background-position: bottom;
+    cursor: pointer;
+    z-index: 4;
+}
+.role_bullet3{
+    display: block;
+    position: absolute;
+    width: 1rem;
+    height: 0.43rem;
+    bottom: 0.2rem;
+    left: 3rem;
+    background: url(../assets/role_bullet3.png);
+    background-size: 100%;
+    background-position: top;
+    cursor: pointer;
+    z-index: 4;
+}
+.role_bullet3:hover{
+    display: block;
+    position: absolute;
+    width: 1rem;
+    height: 0.43rem;
+    bottom: 0.2rem;
+    left: 3rem;
+    background: url(../assets/role_bullet3.png);
+    background-size: 100%;
+    background-position: bottom;
+    cursor: pointer;
+    z-index: 4;
+}

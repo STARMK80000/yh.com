@@ -1,0 +1,96 @@
+.foot{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* 设置一个固定的宽度 */
+    min-height: 0.4rem;
+    /* min-width: ???;  */
+    height: 0.53rem;
+    background: #1d1d1d url(../assets/indexFoot.png) no-repeat center;
+    background-size: 65% auto;
+    z-index: 1;
+    background-position: center 90%;
+}
+.abs .otherPlatform{
+    width: 2.3rem;
+    height: 0.26rem;
+    left: 0.2rem;
+    top: 25%;
+}
+.abs .otherPlatform a {
+    display: block;
+    float: left;
+    height: 100%;
+    width: 11.28%;
+   background-size: 860%;
+   margin-left: 0.03rem;
+   margin-right: 0.03rem;
+   cursor: pointer;
+}
+.abs .otherPlatform a:nth-child(1){
+    background-image: url(../assets/otherPlatform.png);
+    background-position: 16.5% 0%;
+}
+.abs .otherPlatform a:nth-child(1):hover{
+    background-image: url(../assets/otherPlatform.png);
+    background-position: 16.5% -100%;
+}
+.abs .otherPlatform a:nth-child(2){
+    background-image: url(../assets/otherPlatform.png);
+    background-position: 0% 0%;
+}
+.abs .otherPlatform a:nth-child(2):hover{
+    background-image: url(../assets/otherPlatform.png);
+    background-position: 0% -100%;
+}
+.abs .otherPlatform a:nth-child(3){
+    background-image: url(../assets/otherPlatform.png);
+    background-position: 33.25% -0%;
+}
+.abs .otherPlatform a:nth-child(3):hover{
+    background-image: url(../assets/otherPlatform.png);
+    background-position: 33.25% -100%;
+}
+.abs .otherPlatform a:nth-child(4){
+    background-image: url(../assets/otherPlatform.png);
+    background-position: 49.75% 0%;
+}
+.abs .otherPlatform a:nth-child(4):hover{
+    background-image: url(../assets/otherPlatform.png);
+    background-position: 49.75% -100%;
+}
+.abs .otherPlatform a:nth-child(5){
+    background-image: url(../assets/otherPlatform.png);
+    background-position: 66.5% 0%
+}
+.abs .otherPlatform a:nth-child(5):hover{
+    background-image: url(../assets/otherPlatform.png);/* 微信有二维码需要特殊处理*/
+    background-position: 66.5% -100%
+}
+.abs .otherPlatform a:nth-child(5):hover::after{
+    position: absolute;
+    content: ""; /* 必须有content属性 */
+    width: 0.5rem;
+    height: 0.5rem;
+    top: -220%;
+    left: 53%;
+    background-image: url(../assets/weixin.jpg);/* 微信有二维码需要特殊处理*/
+    background-position: center;
+    background-size: 100%;
+}
+.abs .otherPlatform a:nth-child(6){
+    background-image: url(../assets/otherPlatform.png);
+    background-position: 83.5% -0%
+}
+.abs .otherPlatform a:nth-child(6):hover{
+    background-image: url(../assets/otherPlatform.png);
+    background-position: 83.5% -100%
+}
+.abs .otherPlatform a:nth-child(7){
+    background-image: url(../assets/otherPlatform.png);
+    background-position: 100% 0%
+}.abs .otherPlatform a:nth-child(7):hover{
+    background-image: url(../assets/otherPlatform.png);
+    background-position: 100% -100%
+}

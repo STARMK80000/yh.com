@@ -1,0 +1,400 @@
+/* 背景样式 */
+.page_video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0.26rem;
+    left: 0;
+    object-fit: cover; /* 保持宽高比同时填充整个区域 */
+}
+.taptap_click{
+    width: 0.65rem;
+    height: 1rem;
+    background: url(../assets/tapAside\ \(1\).png) no-repeat;
+    background-size: 200% auto;
+    right: 0;
+    top: 1.7rem;
+    cursor: pointer;
+}
+.taptap_click:hover{
+    width: 0.65rem;
+    height: 1rem;
+    background: url(../assets/tapAside\ \(1\).png) no-repeat;
+    background-size: 200% auto;
+    right: 0;
+    top: 1.699rem;
+    background-position: right;
+    cursor: pointer;
+}
+.index_inquiry {
+    width: 1.2rem;
+    height: 0.4rem;
+    background: url(../assets/index_inquiry\ \(1\).png) no-repeat;
+    background-size: 100% auto;
+    right: 0;
+    top: 2.8rem;
+    cursor: pointer;
+    }
+.index_inquiry::after {
+    content: ""; /* 必须有content属性 */
+    position: absolute; /* 设置为绝对定位 */
+    width: 0.8rem;
+    height: 0.8rem;
+    background: url(../assets/indexInquiryHeader.png) no-repeat;
+    background-size: 80% auto;
+    right: 0.56rem; /* 相对于父元素的右边缘调整位置 */
+    top: -0.3rem; /* 与父元素顶部对齐 */
+    cursor: pointer;
+    }
+  
+    .neverness{
+        right: 0.25rem;
+        width: 1.6rem;
+        top: 18%;
+    }
+    .indexNext{
+        width: 0.9rem;
+        bottom: 0.65rem;
+        left: 0.2rem;
+    }
+    .guide_role{
+        display: block;
+        width: 1.3rem;
+        height: 0.335rem;
+        bottom: 0.65rem;
+        right: 0.2rem;
+        background: url(../assets/guide_role.png);
+        background-size:cover;
+        background-position: center;
+        cursor: pointer;
+    }
+    /* 预约与测试下载 */
+    .indexYySubTit{
+        width: 2.7rem;
+        bottom: 1.62rem;
+        left: 3.65rem;
+    }
+    .indexYyBtns{
+        width: 4.3rem;
+        height: 0.7rem;
+        bottom: 1rem;
+        left: 2.9rem;
+    }
+    .indexYyBtns a{
+        display: block;
+        float: left;
+        width: 45%;
+        cursor: pointer;
+    }
+    .abs.indexYyBtns a:nth-child(1){
+        height: 80%;
+        margin-right: 0.16rem;
+        margin-top: 0.15rem;
+        background-image: url(../assets/indexYyBtn1.png);
+        background-size: 100%;
+    }
+    .abs.indexYyBtns a:nth-child(1):hover{
+        height: 80%;
+        margin-right: 0.16rem;
+        background-image: url(../assets/indexYyBtn1.png);
+        background-size: 100%;
+        background-position: 0% -100.4%;
+    }
+    .abs.indexYyBtns a:nth-child(2){
+        height: 100%;
+        margin-top: 0.04rem;
+        background-image: url(../assets/index_downBtn.png);
+        background-size: 100%;
+    }
+    .abs.indexYyBtns a:nth-child(2):hover{
+        height: 100%;
+        margin-top: 0.04rem;
+        background-image: url(../assets/index_downBtn.png);
+        background-size: 100%;
+        background-position: 0% -100%;
+    }
+    /* 预约框展示 */
+    .Reservation{
+        position: absolute;
+        display: none;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        opacity: 0.8;
+        z-index: 9;
+        transition: all 0.5s;
+    }
+    .rsv_content{
+        position: absolute;
+        display: none;
+        width:3rem;
+        height: 3.4rem;
+        left:3.5rem ;
+        top: 0.6rem;
+        background: url(../assets/pop_yy_form.png);
+        background-size: 100%;
+        background-position: center;
+        opacity: 1;
+        z-index: 9;
+        transition: all 0.5s;
+    }
+    /* 预约成功展示 */
+    .rsv_successful{
+        position: absolute;
+        display: none;
+        width:3rem;
+        height: 2.4rem;
+        left:3.5rem ;
+        top: 1rem;
+        background: url(../assets/pop_yy_success.png);
+        background-size: 100%;
+        background-position: center;
+        opacity: 1;
+        z-index: 9;
+        transition: all 0.5s;
+    }
+    .rsv_close2{
+        position: absolute;
+        display: block;
+        width: 0.2rem;
+        height: 0.195rem;
+        top: 0.1rem;
+        right: 0.1rem;
+        background: url(../assets/popClose.png);
+        background-size: 100%;
+        cursor: pointer;
+    }
+    /* 预约框关闭 */
+    .rsv_close{
+        position: absolute;
+        display: block;
+        width: 0.2rem;
+        height: 0.195rem;
+        top: 0.1rem;
+        right: 0.1rem;
+        background: url(../assets/popClose.png);
+        background-size: 100%;
+        cursor: pointer;
+    }
+    /* 预约框内容 */
+    .yyForm{
+        position: absolute;
+        display: block;
+        width: 80%;
+        height: 0.5rem;
+        top: 0.8rem;
+        left: 10%;
+    }
+    .rsv_pone{
+        width: 100%;
+        height: 0.2rem;
+        background-color: #1d1d1d;
+        border-radius: 0.5rem;
+    }
+    .yyFormRow{
+        width: 100%;
+        height: 0.2rem;
+        margin-top: 10%;
+        top: 1rem;
+        left: 10%;
+        background-color: #1d1d1d;
+        border-radius: 0.5rem;
+    }
+    .country{
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        padding-right: .1rem;
+        height: .1rem;
+        line-height: .1rem;
+        border-right: .02rem solid #6e6e6e;
+        font-size: .1rem;
+        color: #e8e8e8;
+    }
+    .inputTel_1{
+        position: absolute;
+        right: .7rem;
+        top: 0;
+        height: inherit;
+        color: #828282;
+        border: none;
+        outline: none;
+        font-size: .08rem;
+        background: none;
+    }
+    .inputTel_1:focus {
+        border: none;
+        outline: none;
+    }
+    .yyForm_submit{
+        position: absolute;
+        width: 1.5rem;
+        height: 0.228rem;
+        bottom: 0.85rem;
+        left: 0.7rem;
+        background: url(../assets/yySubmit.png);
+        background-size: 100%;
+        background-position: 0% 0%;
+        cursor: pointer;
+    }
+    .yyForm_submit:hover{
+        position: absolute;
+        width: 1.5rem;
+        height: 0.228rem;
+        bottom: 0.85rem;
+        left: 0.7rem;
+        background: url(../assets/yySubmit.png);
+        background-size: 100%;
+        background-position: 0% -100%;
+        cursor: pointer;
+    }
+    /* 验证码部分 */
+    .inputTel_2{
+        position: absolute;
+        right: 1rem;
+        top: 0.44rem;
+        height: inherit;
+        color: #828282;
+        border: none;
+        outline: none;
+        font-size: .08rem;
+        background: none;
+    }
+    .yyFormRow_btn{
+        position: absolute;
+        right: 0.12rem;
+        top: 0.46rem;
+        height: 0.16rem;
+        width: 0.8rem;
+        border-radius: 1rem;
+        background: aqua;
+        color: #000000;
+        font-size: .08rem;
+        text-align: center;
+        line-height: .15rem;
+        cursor: pointer;
+    }
+    
+    /* 弹出宣传视频框 */
+    .pvBtn{
+        bottom: 1.8rem;
+        right: 3.4rem;
+        width: 0.75rem;
+        height: 0.5rem;
+        background-image: url(../assets/pvBtn.png);
+        background-size: 100%;
+        cursor: pointer;
+    }
+    .pvBtn:hover{
+        position: absolute;
+        bottom: 1.8rem;
+        right: 3.4rem;
+        width: 0.75rem;
+        height: 0.5rem;
+        background-image: url(../assets/pvBtn.png);
+        background-size: 100%;
+        background-position: 0% -100%;
+    }
+    /* 关闭按钮 */
+    .POP_close{
+        position: absolute;
+        width: 0.25rem;
+        height: 0.25rem;
+        top: 24%;
+        left: 7.2rem;
+        background: url(../assets/pop_close.png);
+        background-size: 100%;
+        cursor: pointer;
+    }            
+    .toplayer{
+        left: 30%;
+        top: 28%;
+        width: 32%;
+        height: 48%;
+        background-image: url(../assets/pvPlayer.png);
+        background-size: cover;
+        animation: spin 1s linear infinite;
+        transition: all 0.3s ease;
+    }
+    @keyframes spin {
+        0% {
+            transform: scale(1);
+        }
+        30% { /* 从45%到50%保持不变，模拟停顿 */
+            transform: scale(1.1);
+        }
+        50% {
+            transform: scale(1.1);
+        }
+        80% { /* 从95%到100%保持不变，模拟停顿 */
+            transform: scale(1);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    .videoPlayer{
+        position: absolute;
+        width: 40%;
+        top: 25%;
+        left: 30%;
+        z-index: 5;
+    }
+    .conceptBtn{
+        display: block;
+        width: 0.3rem;
+        height: 0.3rem;
+        bottom: 68%;
+        right: 3rem;
+        cursor: pointer;
+    }
+    .conceptBtn::after{
+        content: ""; /* 必须有content属性 */
+        display: block;
+        position: absolute;
+        width: 0.3rem;
+        height: 0.3rem;
+        background: url(../assets/conceptCircle1.png);
+        background-size: 100%;
+        background-position: center;
+        animation: conBtn 2.5s linear infinite;
+    }
+    .conceptBtn::before{
+        content: ""; /* 必须有content属性 */
+        display: block;
+        position: absolute;
+        margin-top: 0.016rem;
+        margin-left: 0.016rem;
+        width: 0.27rem;
+        height: 0.27rem;
+        background: url(../assets/conceptCircle1.png);
+        background-size: 100%;
+        background-position: center;
+        animation: conBtn_2 2.8s linear infinite;
+    }
+    @keyframes conBtn {
+        0% {
+    transform: rotate(0deg); 
+}
+        100% {
+    transform: rotate(180deg); /* 使用 transform 属性 */
+    }
+    }
+    @keyframes conBtn_2 {
+        0% {
+    transform: rotate(0deg); 
+}
+        100% {
+    transform: rotate(-180deg); /* 使用 transform 属性 */
+    }
+    }  
+    .concept{
+        display: block;
+        width: 0.15rem;
+        height: 0.15rem;
+        bottom: 25%;
+        right: 25%;
+        background: url(../assets/concept.png);
+        background-size: 100%;
+    }

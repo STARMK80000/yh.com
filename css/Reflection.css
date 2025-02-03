@@ -1,0 +1,343 @@
+.page_city{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    object-fit: cover; /* 保持宽高比同时填充整个区域 */
+}
+/* 动画预设 */
+.wavyLline{
+    transition: all 0.5s;
+    opacity: 1;
+    display: none;
+}
+.wavyLline1{
+    display: none;
+    width: 200%;
+    height: 0.37rem;
+    bottom: 0.5rem;
+    z-index: 6;
+    background: url(../assets/wavyLline1.png);
+    background-size: 10%;
+    animation: wav1 18s linear forwards;
+    transition: opacity 0.5s ease-in-out;
+    animation-fill-mode: forwards;
+}
+.wavyLline2{
+    display: none;
+    width: 220%;
+    height: 0.43rem;
+    bottom: 0.4rem;
+    z-index: 5;
+    background: url(../assets/wavyLline2.png);
+    background-size: 10%;
+    animation: wav1 10s linear forwards;
+    transition: opacity 0.3s ease-in-out;
+    animation-fill-mode: forwards;
+}
+@keyframes wav1{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{transform: translateX(-100%);}
+}
+/* 磁带样式 */
+.tape{
+    width: 7rem;
+    height: 3.15rem;
+    top: 0.6rem;
+    left: 1rem;
+    z-index: 3;
+    animation: tape 0.8s ;   
+}
+@keyframes tape{
+    0%{
+        transform: translateX(-100%);
+    }
+    40%{
+        transform: translateX(10%);
+    }
+    60%{
+        transform: translateX(0%);
+    }
+    70%{
+        transform: translateX(5%);
+    }
+    80%{
+        transform: translateX(0%);
+    }
+    90%{
+        transform: translateX(1%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+
+}
+.tape_all{
+    width: 5.25rem;
+    height: 3.15rem; 
+    z-index: 3;
+    transition: all 1s;
+}
+.tapeA{
+    width: 5.25rem;
+    height: 3.15rem;
+    background: url(../assets/tape.png);
+    background-size: 100%;
+    transition: all 1s;
+    z-index: 3;
+}
+.tapeB{
+    width: 5.25rem;
+    height: 3.15rem;
+    background: url(../assets/tape.png);
+    background-size: 100%;
+    background-position: bottom;
+    transition: all 1s;
+    transform: rotateY(180deg);
+    opacity: 0;
+}
+.tapeA::after{
+    content: ""; 
+    display: block;
+    position: absolute;
+    width: 0.8rem;
+    height: 0.8rem;
+    top: 1.03rem;
+    left: 0.92rem;
+    background: url(../assets/tapeAxle.png);
+    background-size: 100%;
+    background-position: top;
+    animation: tapeA 2s linear infinite;
+}
+.tapeA::before{
+    content: ""; 
+    display: block;
+    position: absolute;
+    width: 0.8rem;
+    height: 0.8rem;
+    top: 1.03rem;
+    right: 0.87rem;
+    background: url(../assets/tapeAxle.png);
+    background-size: 100%;
+    background-position: top;
+    animation: tapeA 2s linear infinite;
+}
+.tapeB::after{
+    content: ""; 
+    display: block;
+    position: absolute;
+    width: 0.8rem;
+    height: 0.8rem;
+    top: 1.03rem;
+    left: 0.92rem;
+    background: url(../assets/tapeAxle.png);
+    background-size: 100%;
+    background-position: bottom;
+    animation: tapeA 2s linear infinite;
+}
+.tapeB::before{
+    content: ""; 
+    display: block;
+    position: absolute;
+    width: 0.8rem;
+    height: 0.8rem;
+    top: 1.03rem;
+    right: 0.87rem;
+    background: url(../assets/tapeAxle.png);
+    background-size: 100%;
+    background-position: bottom;
+    animation: tapeA 2s linear infinite;
+}
+@keyframes tapeA{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(-178.5deg);
+    }
+}
+/* 磁带动画文本 */
+.tapeAnimateText{
+    width: 1.75rem;
+    height: 3.15rem;
+    right: 0;
+}
+.tapeAnimateT{
+    left: 0;
+    height: 2.65rem;
+    top: 0.25rem;
+    transform: translateX(-100%);
+    animation: tapeAn 0.8s linear
+}
+@keyframes tapeAn {
+    0%{
+        transform: translateX(0%);
+    }
+    75%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+/* 轮播图 */
+.citySlides{
+    width: 5.4rem;
+    height: 2.5rem;
+    background: #121212;
+    top: 1.35rem;
+    right: 1.6rem;
+    border: .06rem solid #585858;
+    z-index: 6;
+    animation: citySlides 1.5s linear;
+}
+@keyframes citySlides{
+    0%{
+        transform: translateX(150%);
+    }
+    65%{
+        transform: translateX(150%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+.swiper-container{
+    position:absolute;
+    width: 5.4rem;
+    height: 2.5rem;
+    overflow: hidden;
+}
+.swiper-wrapper {
+    width: 5.4rem;
+    height: 2.5rem;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+/* 图片主体 */
+.citySlideImg {
+    width: 5.4rem;
+    height: 2.5rem;
+    box-sizing: border-box;
+    z-index: 7;
+}
+.swiper-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+/* 按钮 */
+.swiper-button-prev{
+    width: 0.3rem;
+    height: 1.09rem;
+    top: 0.6rem;
+    right: 5.6rem;
+    background: url(../assets/citySlidePrev.png);
+    background-size: 200%;
+    background-position: 0% 0;
+    cursor: pointer;
+}
+.swiper-button-prev:hover{
+    width: 0.3rem;
+    height: 1.09rem;
+    top: 0.6rem;
+    right: 5.6rem;
+    background: url(../assets/citySlidePrev.png);
+    background-size: 200%;
+    background-position: -100% 0;
+    cursor: pointer;
+}
+.swiper-button-next{
+    width: 0.3rem;
+    height: 1.09rem;
+    top: 0.6rem;
+    right: -0.6rem;
+    background: url(../assets/citySlideNext.png);
+    background-size: 200%;
+    background-position: 0% 0;
+    cursor: pointer;
+}
+.swiper-button-next:hover{
+    width: 0.3rem;
+    height: 1.09rem;
+    top: 0.6rem;
+    right: -0.6rem;
+    background: url(../assets/citySlideNext.png);
+    background-size: 200%;
+    background-position: -100% 0;
+    cursor: pointer;
+}
+/* 指示条 */
+.swiper-pagination{
+    display: flex;
+    bottom: -0.7rem;
+    right: 1.6rem;
+}
+.swiper-pagination-bullet {
+    width: 0.4rem;
+    height: 0.05rem;
+    background-color: none;
+    border: #656565 solid 0.01rem;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+.swiper-pagination-bullet-active {
+    background-color: #e8e8e8;
+}
+/* citySlideNum */
+.citySlideNum{
+    top: 2.7rem;
+    left: 0rem;
+    transition: all 0.5s;
+}
+.citySlideNum img{
+    width: 1rem;
+}
+.citySlideNum:nth-child(1){
+    opacity: 1;
+}
+.citySlideNum:nth-child(2){
+    opacity: 0;
+}
+.citySlideNum:nth-child(3){
+    opacity: 0;
+}
+.citySlideNum:nth-child(4){
+    opacity: 0;
+}
+.citySlideNum:nth-child(5){
+    opacity: 0;
+}
+.citySlideTit{
+    top: 2.7rem;
+    left: 1rem;
+    transition: all 0.5s;
+}
+.citySlideTit img{
+    width: 3rem;  
+}
+.citySlideTit:nth-last-child(1){
+    opacity: 1;
+}
+.citySlideTit:nth-last-child(2){
+    opacity: 0;
+}
+.citySlideTit:nth-last-child(3){
+    opacity: 0;
+}
+.citySlideTit:nth-last-child(4){
+    opacity: 0;
+}
+.citySlideTit:nth-last-child(5){
+    opacity: 0;
+}
+
+
+
+
+
+

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>《异环》官方网站-超自然都市开放世界RPG</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="./css/Header.css">
+    <link rel="stylesheet" type="text/css" href="./css/HomePage.css">
+    <link rel="stylesheet" type="text/css" href="./css/Foot.css"> 
+    <link rel="stylesheet" type="text/css" href="./css/Character_Intro.css"> 
+    <link rel="stylesheet" type="text/css" href="./css/Reflection.css"> 
+    <link rel="stylesheet" type="text/css" href="./css/Intelligence.css"> 
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            background: #1d1d1d;
+        }        
+        @media screen and (max-width:1024px){
+            html{
+                font-size: 100px !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="header">
+        <a href="http://127.0.0.1:5500/index.html">
+            <img src="./assets/NTE_logo.png" class="abs logo">
+        </a>
+        <nav class="abs banner" id="linkContainer">
+            <a class="active"></a>
+            <a></a>
+            <a></a>
+            <a></a>
+            <a></a>
+            <div class="abs cityshadow_box1">
+                <div class="cityshadow"></div>
+                <div class="cityshadow"></div>
+                <div class="cityshadow"></div>
+                <div class="cityshadow"></div>
+            </div>
+            <div class="abs cityshadow_box2">
+                <div class="cityshadow2"></div>
+                <div class="cityshadow2"></div>
+                <div class="cityshadow2"></div>
+                <div class="cityshadow2"></div>
+            </div>
+        </nav>
+        <!-- 音乐播放组件 -->
+        <a class="abs bgMusicSwitch" id="musicSwitchLink">
+        </a>
+        <audio id="backgroundMusic" loop>
+            <source src="./music/列车组.ogg" type="audio/ogg">
+            您的游览器暂不支持audio
+        </audio>
+    </header>
+    <!-- 首页 -->
+    <div class="Homepage">
+    <div class="video-container">
+        <video poster="https://yh.wanmei.com/images/cover240718/page_index.jpg" src="https://yhvmg.wmupd.com/webops/yh/yh_bgv_20240704.mp4" loop autoplay muted class="page_video"></video>
+    </div> 
+    <a href="https://www.taptap.cn/app/714119?utm_medium=rep&utm_source=rep_cp81kcrn8op" class="abs taptap_click"></a>
+    <a class="abs index_inquiry" id="index_inquiry"></a>
+    <img src="./assets/indexNet.png" class="abs indexNext">
+    <img src="./assets/indexYySubTit.png" class="abs indexYySubTit">
+    <!-- 概念站动画 -->
+    <a class="abs conceptBtn">
+        <span class="abs concept"></span>
+        <span></span>
+    </a>
+    <!-- 弹出框:宣传视频 -->
+    <a class="abs pvBtn countEventClick" counttype="pcvedioClick" videolink="https://yhvmg.wmupd.com/webops/yh/yh_pv_20241127.mp4">
+        <span class="abs toplayer"></span>
+    </a>
+    <video id="videoPlayer"class="videoPlayer" controls style="display: none;"> 
+        <source src="https://yhvmg.wmupd.com/webops/yh/yh_pv_20241127.mp4" type="video/mp4">
+    </video>
+    <a class="POP_close" id="pop_close" style="display: none;"></a> 
+    <!-- foot_角色介绍 -->
+     <a class="abs guide_role" id="guide_role"></a>
+     <!-- 预约测试 -->
+    <div class="abs indexYyBtns">
+        <a id="indexYyBtns"></a>
+        <a href="./NevernessToEverness_setup.exe" download="NevernessToEverness_setup.exe"></a>
+    </div>
+    <!-- 底部展示 -->
+    <div class="abs foot">
+        <div class="abs otherPlatform">
+        <a href="https://l.taptap.cn/PAPIdVxq?channel=rep-rep_cp81kcrn8op"></a>
+        <a href="https://space.bilibili.com/3546636978489848"></a>
+        <a href="https://weibo.com/u/7929584207"></a>
+        <a href="https://www.douyin.com/user/MS4wLjABAAAA12pKNne8CBIf8nbbTpLt7dBoFhzWPFgnVApodN-k-Co"></a>
+        <a></a>
+        <a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=kCqKF4iYCzC98qtoeQuSqIzJuk8V7Rzd&authKey=5gBrXmEHyPqxQmvN72mFpWIkhejJytIwvu2ALnAewInseWTPqTtMbPaFJT6SLMXF&noverify=0&group_code=528397222"></a>
+        <a href="https://douliu.wanmei.com/circle.html?circleId=84"></a>
+    </div>
+    <img src="./assets/neverness.png" class="abs neverness">
+    </div>
+    </div>
+    <!-- 预约栏整体 -->
+    <div class="Reservation" id="Reservation"></div>
+    <div class="rsv_content" id="rsv_content">
+        <a class="rsv_close"></a>
+        <!-- 预约表单 -->
+        <div class="yyForm">
+        <div class="rsv_pone">
+            <span class="country">+86</span>
+            <input class="inputTel_1" placeholder="请输入手机号" maxlength="11" id="phoneNumber">
+        </div>
+        <div class="yyFormRow">
+            <input class="inputTel_2" id="verificationCodeInput" placeholder="请输入验证码" maxlength="6" >
+            <a class="yyFormRow_btn" id="yyFormRow_btn">获取验证码</a>
+        </div>
+    </div>
+    <div class="yyForm_submit"></div>
+    </div>
+    <!-- 预约成功组件 -->
+    <div class="rsv_successful">
+        <a class="rsv_close2"></a>
+    </div>
+    <!-- 角色介绍 -->
+    <div class="Character_Intro">
+    <!-- 左侧预约组件 -->
+    <div class="aside_yy"> 
+        <div class="show"></div>
+    </div>
+    <!-- 角色介绍主体 -->
+    <div class="role_character"></div>
+    <div class="role_character_sign1"></div>
+    <!-- 角色介绍1号 -->
+    <div class="role_1">
+    <video poster="https://yhvmg.wmupd.com/webops/yh/yh_bg_bohe.png" src="./assets/yh_bgv_bohe.mp4" autoplay="" muted="" loop="" class="roleSlideBg" style="display: block;" id="yh_bgv_bohe_1"></video>
+    <div class="role1_name"></div>
+    <div class="role1_lines"></div>
+    </div>
+    <!-- 角色介绍2号 -->
+    <div class="role_2">
+    <video poster="https://yhvmg.wmupd.com/webops/yh/yh_bg_nanali.png" src="./assets/yh_bgv_nanali.mp4" autoplay="" muted="" loop="" class="roleSlideBg2"id="yh_bgv_nanal_2"></video>
+    <div class="role2_name"></div>
+    <div class="role2_lines"></div>
+    </div>
+    <!-- 角色介绍3号 -->
+    <div class="role_3">
+    <video poster="https://yhvmg.wmupd.com/webops/yh/yh_bg_zaowu.png" src="./assets/yh_bgv_zaowu.mp4" autoplay="" muted="" loop="" class="roleSlideBg3"id="yh_bgv_zaowu_3"></video> 
+    <div class="role3_name"></div>
+    <div class="role3_lines"></div>
+    </div>
+    <!-- 切换栏部分 -->
+    <div class="role_bullet1"></div>
+    <div class="role_bullet2"></div>
+    <div class="role_bullet3"></div>
+    </div>
+    <!-- 都市映像 -->
+    <div class="Reflection">
+    <video  poster="./assets/page_city.jpg" class="page_city"></video>
+    <!-- 左侧预约栏组件 -->
+    <div class="aside_yy"> 
+        <div class="show" id="show2"></div> 
+    </div>
+    <div class="abs wavyLline1"></div>
+    <div class="abs wavyLline2"></div>
+    <!-- 磁带动画组件 -->
+    <div class="abs tape" id="tape">
+        <div class="abs tape_all">
+            <div class="abs tapeA"></div>
+            <div class="abs tapeB"></div>
+        </div>
+    <div class="abs tapeAnimateText">
+    <img src="./assets/tapeAnimateT_line.png" class="abs tapeAnimateT">
+    <img src="./assets/tapeAnimateT1.png" class="abs tapeAnimateT">
+    <img src="./assets/tapeAnimateT2.png" class="abs tapeAnimateT">
+    <img src="./assets/tapeAnimateT3.png" class="abs tapeAnimateT">
+    </div>
+    </div>
+    <!-- 宣传轮播图 -->
+     <div class=" abs citySlides">
+        <div class="abs swiper-container">
+            <div class="abs swiper-wrapper">
+                <img src="./assets/NTE_features1.jpg" class="citySlideImg">
+                <img src="./assets/NTE_features2.jpg" class="citySlideImg">
+                <img src="./assets/NTE_features3.jpg" class="citySlideImg">
+                <img src="./assets/NTE_features4.jpg" class="citySlideImg">
+                <img src="./assets/NTE_features5.jpg" class="citySlideImg">
+            </div>
+        </div>
+        <div class="abs swiper-pagination"></div>
+        <div class="abs swiper-button-prev"></div>
+        <div class="abs swiper-button-next"></div>
+        <div class="cityNum">
+        <div class="abs citySlideNum">
+            <img src="./assets/citySlide1Num.png">
+        </div>
+        <div  class="abs citySlideNum">
+            <img src="./assets/citySlide2Num.png">
+        </div>
+        <div  class="abs citySlideNum">
+            <img src="./assets/citySlide3Num.png">
+        </div>
+        <div  class="abs citySlideNum">
+            <img src="./assets/citySlide4Num.png">
+        </div>
+        <div  class="abs citySlideNum">
+            <img src="./assets/citySlide5Num.png">
+        </div>
+    </div>
+        <div class="cityTit">
+            <div class="abs citySlideTit">
+                <img src="./assets/citySlide1Tit.png">
+            </div>
+            <div class="abs citySlideTit">
+                <img src="./assets/citySlide2Tit.png">
+            </div>
+            <div class="abs citySlideTit">
+                <img src="./assets/citySlide3Tit.png">
+            </div>
+            <div class="abs citySlideTit">
+                <img src="./assets/citySlide4Tit.png">
+            </div>
+            <div class="abs citySlideTit">
+                <img src="./assets/citySlide5Tit.png">
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- 情报速递 -->
+    <div class="Intelligence">
+        <video  poster="./assets/page_bg.jpg" class="page_intelTit"></video>
+        <div class="aside_yy"> 
+            <div class="show" id="show3"></div> 
+        </div>
+        <div class="abs intelTit"></div>
+        <div class="abs intelSubTit1"></div>
+        <div class="abs intelSubTit2"></div>
+        <div class="abs intelPlate">
+            <div class="abs intelAdorn2"></div>
+        </div>
+        <!-- 轮播图部分 -->
+         
+        <div class=" abs citySlides2">
+        <div class="abs swiper-container2">
+            <div class="abs swiper-wrapper2">
+                <img src="./assets/1143a889c2a96a1a4dbdbbba1037a5eac487.jpg" class="citySlideImg2">
+                <img src="./assets/1143ea648b5f242f4fe8a399cb5f741366bf.jpg" class="citySlideImg2">
+                <img src="./assets/1143daf6b582954042b8801ae2564c19d398.jpg" class="citySlideImg2">
+                <img src="./assets/114378de7f49a0914beba3d399de0a75fd0e.jpg" class="citySlideImg2">
+                <img src="./assets/114317313727441880.jpg" class="citySlideImg2">
+            </div>
+        </div>
+        <div class="abs swiper-pagination2"></div>
+        <div class="abs swiper-button-prev2"></div>
+        <div class="abs swiper-button-next2"></div>
+        <div class="cityNum2">
+        <div class="abs citySlideNum2">
+            <a href="/news/gamenews/20241202/253937.html" target="_blank" class="intelSlideTit">《异环》「奇点测试」感谢寄语</a>
+        </div>
+        <div  class="abs citySlideNum2">
+            <a href="/news/gamenews/20241205/254008.html" target="_blank" class="intelSlideTit">《异环》「奇点测试」优化清单</a>
+        </div>
+        <div  class="abs citySlideNum2">
+            <a href="/news/gamenews/20241127/253876.html" target="_blank" class="intelSlideTit">《异环》「奇点测试」今日开启 玩转自由大都市</a>
+        </div>
+        <div  class="abs citySlideNum2">
+            <a href="/news/gamebroad/20241126/253852.html" target="_blank" class="intelSlideTit">「奇点测试」预下载开启&amp;测试详情说明</a>
+        </div>
+        <div  class="abs citySlideNum2">
+            <a href="/news/gamenews/20241112/253621.html" target="_blank" class="intelSlideTit">《异环》「奇点测试」定档11.28 超自然都市轻喜剧即将放送！</a>
+        </div>
+    </div>
+        <div class="cityTit">
+            <div class="abs citySlideTit2">
+                <div class="abs intelDate">2024-11-27</div>
+            </div>
+            <div class="abs citySlideTit2">
+                <div class="abs intelDate">2024-12-05</div>
+            </div>
+            <div class="abs citySlideTit2">
+                <div class="abs intelDate">2024-12-02</div>
+            </div>
+            <div class="abs citySlideTit2">
+                <div class="abs intelDate">2024-12-15</div>
+            </div>
+            <div class="abs citySlideTit2">
+                <div class="abs intelDate">2024-12-29</div>
+            </div>
+        </div>
+    </div>
+    </div>
+<script src="./js/flexble.js"></script>
+<script src="./js/index.js"></script>
+    
+</body>
+</html>

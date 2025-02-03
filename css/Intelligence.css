@@ -1,0 +1,203 @@
+.page_intelTit{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    object-fit: cover; /* 保持宽高比同时填充整个区域 */
+     
+}
+.intelTit{
+    width: 2.5rem;
+    height: 0.3rem;
+    top: 0.8rem;
+    left: 1.5rem;
+    background: url(../assets/intelTit.png);
+    background-size: 100%;
+}
+.intelSubTit1{
+    width: 0.5rem;
+    height: 0.57rem;
+    top: 0.65rem;
+    left: 4.1rem;
+    background: url(../assets/intelSubTit1.png);
+    background-size: 100%;
+}
+.intelSubTit2{
+    width: 1.1rem;
+    height: 0.3rem;
+    top: 0.8rem;
+    left: 4.8rem;
+    background: url(../assets/intelSubTit2.png);
+    background-size: 100%;
+}
+/* 主体部分 */
+.intelPlate{
+    width: 8.5rem;
+    height: 1.9rem;
+    top: 1.28rem;
+    right: 0;
+    background: url(../assets/intelPlate.png);
+    background-size: 100%;
+}
+.intelAdorn2{
+    width: 1rem;
+    height: 0.17rem;
+    top: 0;
+    right: 2.5rem;
+    background: url(../assets/intelAdorn2.png);
+    background-size: 100%;
+}
+/* 轮播图 */
+.citySlides2{
+    width: 3.8rem;
+    height: 2rem;
+    top: 1.35rem;
+    right: 4.8rem;
+    z-index: 6;
+}
+.swiper-container2{
+    position:absolute;
+    width: 3.8rem;
+    height: 2rem;
+    overflow: hidden;
+}
+.swiper-wrapper2 {
+    width: 3.8rem;
+    height: 2rem;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+/* 图片主体 */
+.citySlideImg2 {
+    width: 3.8rem;
+    height: 2rem;
+    box-sizing: border-box;
+    z-index: 7;
+}
+.swiper-pagination2 {
+    display: flex;
+    justify-content: center;
+}
+/* 按钮 */
+.swiper-button-prev2{
+    width: 0.3rem;
+    height: 0.241rem;
+    top: 1.5rem;
+    right: -2.6rem;
+    background: url(../assets/intelSlideBtn.png);
+    background-size: 225%;
+    background-position: 0% 0%;
+    cursor: pointer;
+}
+.swiper-button-prev2:hover{
+    width: 0.3rem;
+    height: 0.241rem;
+    top: 1.5rem;
+    right: -2.6rem;
+    background: url(../assets/intelSlideBtn.png);
+    background-size: 225%;
+    background-position: 0% -100%;
+    cursor: pointer;
+}
+.swiper-button-next2{
+    width: 0.3rem;
+    height: 0.24rem;
+    top: 1.5rem;
+    right: -3rem;
+    background: url(../assets/intelSlideBtn.png);
+    background-size: 225%;
+    background-position: 100% 0%;
+    cursor: pointer;
+}
+.swiper-button-next2:hover{
+    width: 0.3rem;
+    height: 0.24rem;
+    top: 1.5rem;
+    right: -3rem;
+    background: url(../assets/intelSlideBtn.png);
+    background-size: 225%;
+    background-position: 100% -100%;
+    cursor: pointer;
+}
+/* 指示条 */
+.swiper-pagination2{
+    display: flex;
+    bottom: -1.2rem;
+    right: -1.2rem;
+}
+.swiper-pagination-bullet2 {
+    width: 0.4rem;
+    height: 0.05rem;
+    background-color: none;
+    border: #656565 solid 0.01rem;
+    margin: 0 0.03rem;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+.swiper-pagination-bullet-active2 {
+    background-color: #e8e8e8;
+}
+/* 上方文字预设 */
+.citySlideNum2{
+    top: 0.05rem;
+    left: 4rem;
+    border-bottom:0.01rem solid #313131;
+    line-height: 0.45rem;
+    font-size: .25rem;
+    color: #313131;
+    font-weight: bold;
+    width: 3.8rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: all 0.5s;
+}
+.citySlideNum2 a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    outline: none;
+}
+.citySlideNum2:nth-child(1){
+    opacity: 1;
+}
+.citySlideNum2:nth-child(2){
+    opacity: 0;
+}
+.citySlideNum2:nth-child(3){
+    opacity: 0;
+}
+.citySlideNum2:nth-child(4){
+    opacity: 0;
+}
+.citySlideNum2:nth-child(5){
+    opacity: 0;
+}
+/* 下方文字预设 */
+.citySlideTit2{
+    top: 1.5rem;
+    left: 4rem;
+    width: 2rem;
+    line-height: .2rem;
+    font-weight: bold;
+    font-size: .25rem;
+    color: #313131;
+}
+.citySlideTit2 img{
+    width: 3rem;  
+}
+.citySlideTit2:nth-last-child(1){
+    opacity: 1;
+}
+.citySlideTit2:nth-last-child(2){
+    opacity: 0;
+}
+.citySlideTit2:nth-last-child(3){
+    opacity: 0;
+}
+.citySlideTit2:nth-last-child(4){
+    opacity: 0;
+}
+.citySlideTit2:nth-last-child(5){
+    opacity: 0;
+}
